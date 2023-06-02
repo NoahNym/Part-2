@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+    <div id="vanta-canvas" style=" width: 100vw;">
+        <section id="firstSection">
+            <header>
+                <div id="logo"><img src="https://summer2023.vercel.app/_next/image?url=%2Flogo.jpg&w=128&q=75"
+                        style=" width:51px; height: 46.px;" alt=""></div>
+                <div id="header-links">
+                    <a href="#firstSection" onclick="revertElements()">
+                        <h1> Home </h1>
+                    </a>
+                    <a id="profile" href="#firstSection" onclick="toggleElements()">
+                        <h1>Profile</h1>
+                    </a>
+                    <a href="About.html">
+                        <h1>About</h1>
+                    </a>
+                </div>
+            </header>
+
+            <div id="wordSection">
+                <h1 id="Interesting">Interesting....</h1>
+                <h1 id="Wicked">Wicked</h1>
+                <h1 id="Funny">Funny Website</h1>
+                <h1 id="Twisted">Twisted</h1>
+                <a href="#jokeSection"><button id="jokeButton" onclick=fetchJoke()>Tell me a joke</button></a>
+
+
+            </div>
+            <div id="favouriteSection">
+                <h1 id="favourite">My Favourite</h1>
+                <div id="favoriteCards" class=""></div>
+
+
+            </div>
+        </section>
+        <section id="cardSection">
+            <div id="card-div">
+                <div class="card-row">
+                    <div class="card" id="card1" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front ">
+                                <img src="1.jpg">
+                            </div>
+                            <div class="card-back">
+
+                                <h1>Nightshade</h1>
+                                <p>NightShade is a fierce warrior, known for her agility and stealth. She is a skilled
+                                    fighter who prefers to strike from the shadows, using her knowledge of the terrain
+                                    to outmaneuver her enemies. Her reputation precedes her, and many fear the mere
+                                    mention of her name. Despite her formidable skills, NightShade is a solitary figure,
+                                    keeping her own counsel and never revealing her true motives.</p>
+                                <button class="cardButton" onclick="addToFavorites(event)">Add favorite</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card2" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="2.jpg">
+                            </div>
+                            <div class="card-back">
+
+                                <h1>Warcry</h1>
+                                <p>Warcry is a fearsome knight who has risen from the dead to continue his quest for
+                                    vengeance. He is a relentless fighter, driven by a single-minded determination to
+                                    seek retribution against those who wronged him in life. Despite his undead status,
+                                    Warcry possesses a supernatural agility and strength, making him a formidable
+                                    opponent in battle. He is often seen leading his undead army into battle, his
+                                    distinctive battle cry striking fear into the hearts of his enemies.</p>
+                                <button class="cardButton" onclick="addToFavorites(event)">Add favorite</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card3" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="3.jpg">
+                            </div>
+                            <div class="card-back">
+
+                                <h1>Grimshadow</h1>
+                                <p>GrimShadow is a powerful and solitary dark witch, feared for her formidable magic.
+                                    She lives deep in the forest and rarely uses her powers for personal gain. Those who
+                                    seek her out must be cautious, for she is known to be unpredictable and dangerous to
+                                    cross. GrimShadow is a shadowy figure, cloaked in darkness and mystery, and her true
+                                    intentions are known only to herself.</p>
+                                <button class="cardButton" onclick="addToFavorites(event)">Add favorite</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card4" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="4.webp ">
+                            </div>
+                            <div class="card-back">
+
+                                <h1>Shadowstrike</h1>
+                                <p>GrimShadow is a powerful and solitary dark witch, feared for her formidable magic.
+                                    She lives deep in the forest and rarely uses her powers for personal gain. Those who
+                                    seek her out must be cautious, for she is known to be unpredictable and dangerous to
+                                    cross. GrimShadow is a shadowy figure, cloaked in darkness and mystery, and her true
+                                    intentions are known only to herself.</p>
+                                <button class="cardButton" onclick="addToFavorites(event)">Add favorite</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-row">
+
+                    <div class="card" id="card5" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="5.webp">
+                            </div>
+                            <div class="card-back">
+
+                                <h1>Deathwhisper</h1>
+                                <p>Deathwhisper is a mysterious and formidable soldier, with a reputation that spans
+                                    across time and space. Little is known about his origins or his true identity, but
+                                    he is rumored to have fought in some of the most significant battles in history,
+                                    from ancient times to the modern era. Despite the passage of time, Deathwhisper
+                                    remains a fierce warrior, with unparalleled skill and an unwavering determination to
+                                    see his mission through to the end</p>
+                                <button class="cardButton" onclick="addToFavorites(event)">Add favorite</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card6" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="6.jpg">
+                            </div>
+                            <div class="card-back">
+
+                                <h1>Bloodrage</h1>
+                                <p>Bloodrage is a deadly fighter with a deceivingly cute exterior. She may appear
+                                    innocent and sweet, but her petite frame belies her immense strength and ferocity in
+                                    battle. Bloodrage is a master of close combat, using her agility and sharp reflexes
+                                    to outmaneuver her opponents. She is also known for her cunning and resourcefulness,
+                                    often devising creative strategies to take down her enemies. Despite her fearsome
+                                    reputation, Bloodrage has a soft spot for animals and often goes out of her way to
+                                    help them. She is a complex and intriguing figure, with a mix of adorable charm and
+                                    deadly ferocity.</p>
+                                <button class="cardButton" onclick="addToFavorites(event)">Add favorite</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card7" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="7.jpg">
+                            </div>
+                            <div class="card-back">
+
+                                <h1>Shadowclaw</h1>
+                                <p>Shadowclaw is a formidable creature, a hybrid of man and tiger with razor-sharp claws
+                                    and unmatched agility. He is a solitary figure, preferring to keep to himself and
+                                    avoid unnecessary conflict. Shadowclaw is a skilled hunter, using his keen senses
+                                    and stealth to stalk his prey. He is a fierce protector of his territory, and those
+                                    who threaten it do so at their own risk. Despite his ferocity, Shadowclaw has a deep
+                                    respect for the natural world and strives to live in harmony with it. He is a
+                                    creature of mystery and power, with an unwavering spirit and an unmatched skillset.
+                                </p>
+                                <button class="cardButton" onclick="addToFavorites(event)">Add favorite</button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" id="card8" onclick="flipCard(this)">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="8.jpg">
+                            </div>
+                            <div class="card-back">
+
+                                <h1>Darkfire</h1>
+                                <p>Darkfire is a blood magician of immense power and darkness. She wields a formidable
+                                    command over the forces of blood and shadows, using them to bend others to her will.
+                                    Darkfire is a solitary figure, shrouded in mystery and rarely revealing her true
+                                    intentions. She is feared by many for her dark powers, which can bring even the
+                                    bravest warriors to their knees. Despite her fearsome reputation, Darkfire has a
+                                    deep sense of loyalty to those she considers her own. She will stop at nothing to
+                                    protect them, using her formidable powers to strike down any who would seek to harm
+                                    them.</p><button class="cardButton" onclick="addToFavorites(event)">Add
+                                    favorite</button>
+
+
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section id="jokeSection">
+
+            <div>
+                <span id="sentence"></span>
+                <span id="cursor">|</span>
+            </div>
+    </div>
+    </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script>
+        VANTA.NET({
+            el: "#vanta-canvas",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.0,
+            minWidth: 200.00,
+            scale: 2.00,
+            scaleMobile: 1.00,
+            points: 20.00,
+            maxDistance: 15.00,
+            spacing: 14.00,
+            color: 0xf9f9f9,
+            backgroundColor: 0x1c1422,
+            showDots: false,
+
+        })
+    </script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
